@@ -1,5 +1,5 @@
 //
-//  BIDViewController.h
+//  BIDGridViewController.h
 //  TelecomApp
 //
 //  Created by Alessio Fiore on 12/03/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BIDViewController : UIViewController
+@interface BIDGridViewController : UICollectionViewController
 
 @end

@@ -17,7 +17,9 @@
 		6DE93B8E16EF4C930005391F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93B8D16EF4C930005391F /* Default@2x.png */; };
 		6DE93B9016EF4C930005391F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93B8F16EF4C930005391F /* Default-568h@2x.png */; };
 		6DE93B9316EF4C930005391F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93B9116EF4C930005391F /* MainStoryboard.storyboard */; };
-		6DE93B9616EF4C930005391F /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93B9516EF4C930005391F /* BIDViewController.m */; };
+		6DE93B9E16EF50C10005391F /* BIDGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93B9D16EF50C10005391F /* BIDGridViewController.m */; };
+		6DE93BA016EF5F7C0005391F /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93B9F16EF5F7C0005391F /* person.png */; };
+		6DE93BA316EF65C00005391F /* BIDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93BA216EF65BF0005391F /* BIDDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +37,11 @@
 		6DE93B8D16EF4C930005391F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6DE93B8F16EF4C930005391F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6DE93B9216EF4C930005391F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		6DE93B9416EF4C930005391F /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
-		6DE93B9516EF4C930005391F /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
+		6DE93B9C16EF50C10005391F /* BIDGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDGridViewController.h; sourceTree = "<group>"; };
+		6DE93B9D16EF50C10005391F /* BIDGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDGridViewController.m; sourceTree = "<group>"; };
+		6DE93B9F16EF5F7C0005391F /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
+		6DE93BA116EF65BF0005391F /* BIDDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDDetailViewController.h; sourceTree = "<group>"; };
+		6DE93BA216EF65BF0005391F /* BIDDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +91,10 @@
 				6DE93B8816EF4C930005391F /* BIDAppDelegate.h */,
 				6DE93B8916EF4C930005391F /* BIDAppDelegate.m */,
 				6DE93B9116EF4C930005391F /* MainStoryboard.storyboard */,
-				6DE93B9416EF4C930005391F /* BIDViewController.h */,
-				6DE93B9516EF4C930005391F /* BIDViewController.m */,
+				6DE93B9C16EF50C10005391F /* BIDGridViewController.h */,
+				6DE93B9D16EF50C10005391F /* BIDGridViewController.m */,
+				6DE93BA116EF65BF0005391F /* BIDDetailViewController.h */,
+				6DE93BA216EF65BF0005391F /* BIDDetailViewController.m */,
 				6DE93B8016EF4C930005391F /* Supporting Files */,
 			);
 			path = TelecomApp;
@@ -96,6 +103,7 @@
 		6DE93B8016EF4C930005391F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6DE93B9F16EF5F7C0005391F /* person.png */,
 				6DE93B8116EF4C930005391F /* TelecomApp-Info.plist */,
 				6DE93B8216EF4C930005391F /* InfoPlist.strings */,
 				6DE93B8516EF4C930005391F /* main.m */,
@@ -164,6 +172,7 @@
 				6DE93B8E16EF4C930005391F /* Default@2x.png in Resources */,
 				6DE93B9016EF4C930005391F /* Default-568h@2x.png in Resources */,
 				6DE93B9316EF4C930005391F /* MainStoryboard.storyboard in Resources */,
+				6DE93BA016EF5F7C0005391F /* person.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +185,8 @@
 			files = (
 				6DE93B8616EF4C930005391F /* main.m in Sources */,
 				6DE93B8A16EF4C930005391F /* BIDAppDelegate.m in Sources */,
-				6DE93B9616EF4C930005391F /* BIDViewController.m in Sources */,
+				6DE93B9E16EF50C10005391F /* BIDGridViewController.m in Sources */,
+				6DE93BA316EF65C00005391F /* BIDDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
