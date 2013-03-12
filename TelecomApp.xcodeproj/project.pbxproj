@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DE93B7A16EF4C930005391F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE93B7916EF4C930005391F /* UIKit.framework */; };
+		6DE93B7C16EF4C930005391F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE93B7B16EF4C930005391F /* Foundation.framework */; };
+		6DE93B7E16EF4C930005391F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE93B7D16EF4C930005391F /* CoreGraphics.framework */; };
+		6DE93B8416EF4C930005391F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93B8216EF4C930005391F /* InfoPlist.strings */; };
+		6DE93B8616EF4C930005391F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93B8516EF4C930005391F /* main.m */; };
+		6DE93B8A16EF4C930005391F /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93B8916EF4C930005391F /* BIDAppDelegate.m */; };
+		6DE93B8C16EF4C930005391F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93B8B16EF4C930005391F /* Default.png */; };
+		6DE93B8E16EF4C930005391F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93B8D16EF4C930005391F /* Default@2x.png */; };
+		6DE93B9016EF4C930005391F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93B8F16EF4C930005391F /* Default-568h@2x.png */; };
+		6DE93B9316EF4C930005391F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93B9116EF4C930005391F /* MainStoryboard.storyboard */; };
+		6DE93B9616EF4C930005391F /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93B9516EF4C930005391F /* BIDViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6DE93B7616EF4C930005391F /* TelecomApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelecomApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DE93B7916EF4C930005391F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6DE93B7B16EF4C930005391F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6DE93B7D16EF4C930005391F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6DE93B8116EF4C930005391F /* TelecomApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TelecomApp-Info.plist"; sourceTree = "<group>"; };
+		6DE93B8316EF4C930005391F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6DE93B8516EF4C930005391F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DE93B8716EF4C930005391F /* TelecomApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TelecomApp-Prefix.pch"; sourceTree = "<group>"; };
+		6DE93B8816EF4C930005391F /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
+		6DE93B8916EF4C930005391F /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
+		6DE93B8B16EF4C930005391F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6DE93B8D16EF4C930005391F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6DE93B8F16EF4C930005391F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6DE93B9216EF4C930005391F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6DE93B9416EF4C930005391F /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
+		6DE93B9516EF4C930005391F /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DE93B7316EF4C930005391F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE93B7A16EF4C930005391F /* UIKit.framework in Frameworks */,
+				6DE93B7C16EF4C930005391F /* Foundation.framework in Frameworks */,
+				6DE93B7E16EF4C930005391F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DE93B6D16EF4C930005391F = {
+			isa = PBXGroup;
+			children = (
+				6DE93B7F16EF4C930005391F /* TelecomApp */,
+				6DE93B7816EF4C930005391F /* Frameworks */,
+				6DE93B7716EF4C930005391F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DE93B7716EF4C930005391F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DE93B7616EF4C930005391F /* TelecomApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DE93B7816EF4C930005391F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DE93B7916EF4C930005391F /* UIKit.framework */,
+				6DE93B7B16EF4C930005391F /* Foundation.framework */,
+				6DE93B7D16EF4C930005391F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DE93B7F16EF4C930005391F /* TelecomApp */ = {
+			isa = PBXGroup;
+			children = (
+				6DE93B8816EF4C930005391F /* BIDAppDelegate.h */,
+				6DE93B8916EF4C930005391F /* BIDAppDelegate.m */,
+				6DE93B9116EF4C930005391F /* MainStoryboard.storyboard */,
+				6DE93B9416EF4C930005391F /* BIDViewController.h */,
+				6DE93B9516EF4C930005391F /* BIDViewController.m */,
+				6DE93B8016EF4C930005391F /* Supporting Files */,
+			);
+			path = TelecomApp;
+			sourceTree = "<group>";
+		};
+		6DE93B8016EF4C930005391F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DE93B8116EF4C930005391F /* TelecomApp-Info.plist */,
+				6DE93B8216EF4C930005391F /* InfoPlist.strings */,
+				6DE93B8516EF4C930005391F /* main.m */,
+				6DE93B8716EF4C930005391F /* TelecomApp-Prefix.pch */,
+				6DE93B8B16EF4C930005391F /* Default.png */,
+				6DE93B8D16EF4C930005391F /* Default@2x.png */,
+				6DE93B8F16EF4C930005391F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DE93B7516EF4C930005391F /* TelecomApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DE93B9916EF4C930005391F /* Build configuration list for PBXNativeTarget "TelecomApp" */;
+			buildPhases = (
+				6DE93B7216EF4C930005391F /* Sources */,
+				6DE93B7316EF4C930005391F /* Frameworks */,
+				6DE93B7416EF4C930005391F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelecomApp;
+			productName = TelecomApp;
+			productReference = 6DE93B7616EF4C930005391F /* TelecomApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DE93B6E16EF4C930005391F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BID;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Ericsson;
+			};
+			buildConfigurationList = 6DE93B7116EF4C930005391F /* Build configuration list for PBXProject "TelecomApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6DE93B6D16EF4C930005391F;
+			productRefGroup = 6DE93B7716EF4C930005391F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DE93B7516EF4C930005391F /* TelecomApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DE93B7416EF4C930005391F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE93B8416EF4C930005391F /* InfoPlist.strings in Resources */,
+				6DE93B8C16EF4C930005391F /* Default.png in Resources */,
+				6DE93B8E16EF4C930005391F /* Default@2x.png in Resources */,
+				6DE93B9016EF4C930005391F /* Default-568h@2x.png in Resources */,
+				6DE93B9316EF4C930005391F /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DE93B7216EF4C930005391F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE93B8616EF4C930005391F /* main.m in Sources */,
+				6DE93B8A16EF4C930005391F /* BIDAppDelegate.m in Sources */,
+				6DE93B9616EF4C930005391F /* BIDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6DE93B8216EF4C930005391F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DE93B8316EF4C930005391F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6DE93B9116EF4C930005391F /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DE93B9216EF4C930005391F /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DE93B9716EF4C930005391F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6DE93B9816EF4C930005391F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DE93B9A16EF4C930005391F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TelecomApp/TelecomApp-Prefix.pch";
+				INFOPLIST_FILE = "TelecomApp/TelecomApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6DE93B9B16EF4C930005391F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TelecomApp/TelecomApp-Prefix.pch";
+				INFOPLIST_FILE = "TelecomApp/TelecomApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DE93B7116EF4C930005391F /* Build configuration list for PBXProject "TelecomApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE93B9716EF4C930005391F /* Debug */,
+				6DE93B9816EF4C930005391F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DE93B9916EF4C930005391F /* Build configuration list for PBXNativeTarget "TelecomApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE93B9A16EF4C930005391F /* Debug */,
+				6DE93B9B16EF4C930005391F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DE93B6E16EF4C930005391F /* Project object */;
+}
