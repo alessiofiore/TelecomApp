@@ -7,6 +7,8 @@
 //
 
 #import "BIDDetailViewController.h"
+#import "BIDItem.h"
+
 
 @interface BIDDetailViewController ()
 
@@ -26,16 +28,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    
-//    NSInteger *indexPath = ((NSIndexPath *) self.selection[@"indexPath"]).item;
-    
-    
+	// Do any additional setup after loading the view.    
     
     NSIndexPath *indexPath = ((NSIndexPath *) self.selection[@"indexPath"]);
     NSInteger i = indexPath.item;
     
-    self.textView.text = [NSString stringWithFormat:@"%ld", (long)i];
+    BIDItem *item = ((BIDItem *) self.selection[@"object"]);
+    
+//    self.textView.text = [NSString stringWithFormat:@"%ld", (long)i];
+    self.textView.text = [item title];
+
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,6 +8,7 @@
 
 #import "BIDGridViewController.h"
 #import "BIDDetailViewController.h"
+#import "BIDItem.h"
 
 @interface BIDGridViewController ()
 
@@ -28,6 +29,31 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    items = [[NSMutableArray alloc] init];
+    
+    BIDItem *item = [[BIDItem alloc] init];
+    [item setItemId: 1];
+    [item setTitle: @"Item 1"];
+    [item setPictureUrl: @"person.png"];    
+    [items addObject: item];
+    
+    item = [[BIDItem alloc] init];
+    [item setItemId: 2];
+    [item setTitle: @"Item 2"];
+    [item setPictureUrl: @"person.png"];
+    [items addObject: item];
+    
+    item = [[BIDItem alloc] init];
+    [item setItemId: 3];
+    [item setTitle: @"Item 3"];
+    [item setPictureUrl: @"person.png"];
+    [items addObject: item];
+}
+
+- (void)dealloc {
+    [items release];
+    [super dealloc];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,7 +67,7 @@
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 15;
+    return [items count];
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -61,7 +87,10 @@
     
     UIImageView *imgView = (UIImageView *) [cell viewWithTag:1];
     //    NSData *receivedData = [NSData dataWithContentsOfURL:[NSURL URLWithString:data.imageLink]];
-    UIImage *image = [UIImage imageNamed:@"person.png"];
+    
+    NSLog(@"%d %@", indexPath.item, [items[indexPath.item] title]);
+    NSString *pictureUrl = [items[indexPath.item] pictureUrl];
+    UIImage *image = [UIImage imageNamed:pictureUrl];
     imgView.image = image;
     
     UILabel *cellLabel = (UILabel *)[cell viewWithTag:2];
@@ -75,6 +104,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     // TODO: Select Item;
+    NSLog(@"%d", indexPath.item);
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -84,13 +114,13 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     UIViewController *destination = segue.destinationViewController;
     
+    // prepare selection info
+    NSIndexPath *indexPath = [self.collectionView indexPathForCell:sender];
     
+    BIDItem *item = items[indexPath.item];
     
-        // prepare selection info
-        NSIndexPath *indexPath = [self.collectionView indexPathForCell:sender];
-        NSDictionary *selection = @{@"indexPath" : indexPath};
-        [destination setValue:selection forKey:@"selection"];
-    
+    NSDictionary *selection = @{@"indexPath" : indexPath, @"object" : item};
+    [destination setValue:selection forKey:@"selection"];    
 }
 
 @end

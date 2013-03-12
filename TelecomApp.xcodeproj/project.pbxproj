@@ -20,6 +20,7 @@
 		6DE93B9E16EF50C10005391F /* BIDGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93B9D16EF50C10005391F /* BIDGridViewController.m */; };
 		6DE93BA016EF5F7C0005391F /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93B9F16EF5F7C0005391F /* person.png */; };
 		6DE93BA316EF65C00005391F /* BIDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93BA216EF65BF0005391F /* BIDDetailViewController.m */; };
+		6DE93BA716EF848A0005391F /* BIDItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93BA616EF848A0005391F /* BIDItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		6DE93B9F16EF5F7C0005391F /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
 		6DE93BA116EF65BF0005391F /* BIDDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDDetailViewController.h; sourceTree = "<group>"; };
 		6DE93BA216EF65BF0005391F /* BIDDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDDetailViewController.m; sourceTree = "<group>"; };
+		6DE93BA516EF848A0005391F /* BIDItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDItem.h; sourceTree = "<group>"; };
+		6DE93BA616EF848A0005391F /* BIDItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				6DE93B9D16EF50C10005391F /* BIDGridViewController.m */,
 				6DE93BA116EF65BF0005391F /* BIDDetailViewController.h */,
 				6DE93BA216EF65BF0005391F /* BIDDetailViewController.m */,
+				6DE93BA516EF848A0005391F /* BIDItem.h */,
+				6DE93BA616EF848A0005391F /* BIDItem.m */,
 				6DE93B8016EF4C930005391F /* Supporting Files */,
 			);
 			path = TelecomApp;
@@ -187,6 +192,7 @@
 				6DE93B8A16EF4C930005391F /* BIDAppDelegate.m in Sources */,
 				6DE93B9E16EF50C10005391F /* BIDGridViewController.m in Sources */,
 				6DE93BA316EF65C00005391F /* BIDDetailViewController.m in Sources */,
+				6DE93BA716EF848A0005391F /* BIDItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
