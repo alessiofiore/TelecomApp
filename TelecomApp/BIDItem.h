@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface BIDItem : NSObject  {
-@private
     int itemId;
     NSString* title;
     NSString* body;
