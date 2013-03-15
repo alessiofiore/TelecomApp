@@ -10,47 +10,22 @@
 
 @implementation BIDItem
 
--(int) itemId {
-    return itemId;
-};
+@synthesize title;
+@synthesize description;
+@synthesize status;
+@synthesize timestamp;
+@synthesize urlImage;
+@synthesize urlContent;
 
--(NSString*) title {
-    return title;
-};
-
--(NSString*) body {
-    return body;
-};
-
-
--(NSString*) pictureUrl {
-    return pictureUrl;
+- (void) dealloc
+{
+    [title release];
+    [description release];
+    [status release];
+    [timestamp release];    
+    [urlImage release];
+    [urlContent release];
+    [super dealloc];
 }
-
--(NSString*) url {
-    return url;
-};
-
-
--(void) setItemId: (int) i {
-    itemId = i;
-};
-
--(void) setTitle: (NSString*) t {
-   title = t;
-};
-
--(void) setBody: (NSString*) b {
-    body = b;
-};
-
-
--(void) setPictureUrl: (NSString*) picture {
-    pictureUrl = picture;
-}
-
--(void) setUrl: (NSString*) u {
-    url = u;
-};
 
 @end

@@ -33,21 +33,24 @@
     items = [[NSMutableArray alloc] init];
     
     BIDItem *item = [[BIDItem alloc] init];
-    [item setItemId: 1];
-    [item setTitle: @"Item 1"];
-    [item setPictureUrl: @"person.png"];    
+    [item setTitle: @"Copression is 20!"];
+    [item setDescription: @"Ericsson celebrates 20 years of compression - a behind-the-scenes look."];
+    [item setTimestamp: @"2014/07/19 21:10:34"];
+    [item setUrlImage: @"person.png"];
+    [item setUrlContent: @"content.mp4"];
+    [items addObject: item];
+
+    item = [[BIDItem alloc] init];
+    [item setTitle: @"Copression is 20!"];
+    [item setDescription: @"Ericsson celebrates 20 years of compression - a behind-the-scenes look."];
+    [item setTimestamp: @"2014/07/19 21:10:34"];
+    [item setUrlImage: @"person.png"];
+    [item setUrlContent: @"content.mp4"];
     [items addObject: item];
     
     item = [[BIDItem alloc] init];
-    [item setItemId: 2];
-    [item setTitle: @"Item 2"];
-    [item setPictureUrl: @"person.png"];
-    [items addObject: item];
-    
-    item = [[BIDItem alloc] init];
-    [item setItemId: 3];
     [item setTitle: @"Item 3"];
-    [item setPictureUrl: @"person.png"];
+    [item setUrlImage: @"person.png"];
     [items addObject: item];
 }
 
@@ -89,13 +92,12 @@
     //    NSData *receivedData = [NSData dataWithContentsOfURL:[NSURL URLWithString:data.imageLink]];
     
     NSLog(@"%d %@", indexPath.item, [items[indexPath.item] title]);
-    NSString *pictureUrl = [items[indexPath.item] pictureUrl];
-    UIImage *image = [UIImage imageNamed:pictureUrl];
+    NSString *urlImage = [items[indexPath.item] urlImage];
+    UIImage *image = [UIImage imageNamed:urlImage];
     imgView.image = image;
     
     UILabel *cellLabel = (UILabel *)[cell viewWithTag:2];
     cellLabel.attributedText = labelText;
-
     
     return cell;
 }
@@ -119,6 +121,8 @@
     
     BIDItem *item = items[indexPath.item];
     
+    // pass object to next view
+//    NSDictionary *selection = @{@"indexPath" : indexPath, @"object" : item};
     NSDictionary *selection = @{@"indexPath" : indexPath, @"object" : item};
     [destination setValue:selection forKey:@"selection"];    
 }

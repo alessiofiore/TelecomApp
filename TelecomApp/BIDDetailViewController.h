@@ -10,7 +10,13 @@
 
 @interface BIDDetailViewController : UIViewController
 
-@property (retain, nonatomic) IBOutlet UITextView *textView;
+
 @property (copy, nonatomic) NSDictionary *selection;
+@property (retain, nonatomic) IBOutlet UIImageView *imageView;
+@property (retain, nonatomic) IBOutlet UILabel *timestampLabel;
+@property (retain, nonatomic) IBOutlet UILabel *titleLabel;
+@property (retain, nonatomic) IBOutlet UITextView *descriptionTextView;
+@property (retain, nonatomic) IBOutlet UIButton *viewButton;
+@property (retain, nonatomic) IBOutlet UIButton *deleteButton;
 
 @end

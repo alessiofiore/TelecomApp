@@ -9,24 +9,19 @@
 #import <Foundation/Foundation.h>
 
 @interface BIDItem : NSObject  {
-    int itemId;
     NSString* title;
-    NSString* body;
-    NSString* pictureUrl;
-    NSString* url;
+    NSString* description;
+    NSString* status;
+    NSString* timestamp;
+    NSString* urlImage;
+    NSString* urlContent;
 }
 
-- (int) itemId;
-- (NSString*) title;
-- (NSString*) body;
-- (NSString*) pictureUrl;
-- (NSString*) url;
-
-- (void) setItemId: (int) itemId;
-- (void) setTitle: (NSString*) title;
-- (void) setBody: (NSString*) body;
-- (void) setPictureUrl: (NSString*) picture;
-- (void) setUrl: (NSString*) url;
-
+@property (retain) NSString* title;
+@property (retain) NSString* description;
+@property (retain) NSString* status;
+@property (retain) NSString* timestamp;
+@property (retain) NSString* urlImage;
+@property (retain) NSString* urlContent;
 
 @end

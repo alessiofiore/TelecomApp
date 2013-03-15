@@ -28,26 +28,29 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.    
-    
-    NSIndexPath *indexPath = ((NSIndexPath *) self.selection[@"indexPath"]);
-    NSInteger i = indexPath.item;
     
     BIDItem *item = ((BIDItem *) self.selection[@"object"]);
+    self.titleLabel.text = [item title];
+    self.descriptionTextView.text = [item description];
+    self.timestampLabel.text = [item timestamp];
     
-//    self.textView.text = [NSString stringWithFormat:@"%ld", (long)i];
-    self.textView.text = [item title];
-
+    UIImage *image = [UIImage imageNamed:[item urlImage]];
+    self.imageView.image = image;   
+   
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)dealloc {
-    [_textView release];
+    [_imageView release];
+    [_timestampLabel release];
+    [_titleLabel release];
+    [_viewButton release];
+    [_deleteButton release];
+    [_descriptionTextView release];
     [super dealloc];
 }
 @end
