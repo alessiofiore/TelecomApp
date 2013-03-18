@@ -6,15 +6,15 @@
 //  Copyright (c) 2013 Ericsson. All rights reserved.
 //
 
-#import "BIDGridViewController.h"
-#import "BIDDetailViewController.h"
-#import "BIDItem.h"
+#import "HomeViewController.h"
+#import "DetailViewController.h"
+#import "Item.h"
 
-@interface BIDGridViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation BIDGridViewController
+@implementation HomeViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,25 +32,28 @@
     
     items = [[NSMutableArray alloc] init];
     
-    BIDItem *item = [[BIDItem alloc] init];
-    [item setTitle: @"Copression is 20!"];
-    [item setDescription: @"Ericsson celebrates 20 years of compression - a behind-the-scenes look."];
+    Item *item = [[Item alloc] init];
+    [item setTitle: @"Favorite!"];
+    [item setDescription: @"Favorite items"];
     [item setTimestamp: @"2014/07/19 21:10:34"];
     [item setUrlImage: @"person.png"];
     [item setUrlContent: @"content.mp4"];
     [items addObject: item];
 
-    item = [[BIDItem alloc] init];
-    [item setTitle: @"Copression is 20!"];
+    item = [[Item alloc] init];
+    [item setTitle: @"Compression is 20!"];
     [item setDescription: @"Ericsson celebrates 20 years of compression - a behind-the-scenes look."];
     [item setTimestamp: @"2014/07/19 21:10:34"];
     [item setUrlImage: @"person.png"];
     [item setUrlContent: @"content.mp4"];
     [items addObject: item];
     
-    item = [[BIDItem alloc] init];
+    item = [[Item alloc] init];
     [item setTitle: @"Item 3"];
+    [item setDescription: @"asdasdjkaskjdha sjhd akjshd ajkshd akjsd akjshd akjshd akjs dakjsd kajs kjahs dkjahs kjda skjda jskdha kjshd akjshd akjshd akjhsd akjsh dakjhs dkajhs dkajhs dakjshd akjshd akjshd akjshd akjshd akjsh akjshd akjd"];
+    [item setTimestamp: @"2014/07/19 21:10:34"];
     [item setUrlImage: @"person.png"];
+    [item setUrlContent: @"content.mp4"];
     [items addObject: item];
 }
 
@@ -79,19 +82,19 @@
     NSMutableAttributedString *labelText;
     
     if (indexPath.item == 0) {
-        cellName = @"myFavoriteCell";
+        cellName = @"favoriteCell";
         labelText = [[NSMutableAttributedString alloc] initWithString:@"Favorites"];
     } else {
-        cellName = @"myCell";
+        cellName = @"newsCell";
         labelText = [[NSMutableAttributedString alloc] initWithString:@"News"];
     }
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellName forIndexPath:indexPath];
     
     UIImageView *imgView = (UIImageView *) [cell viewWithTag:1];
-    //    NSData *receivedData = [NSData dataWithContentsOfURL:[NSURL URLWithString:data.imageLink]];
     
-    NSLog(@"%d %@", indexPath.item, [items[indexPath.item] title]);
+//    NSLog(@"%d %@", indexPath.item, [items[indexPath.item] title]);
+    
     NSString *urlImage = [items[indexPath.item] urlImage];
     UIImage *image = [UIImage imageNamed:urlImage];
     imgView.image = image;
@@ -106,7 +109,6 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     // TODO: Select Item;
-    NSLog(@"%d", indexPath.item);
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -115,16 +117,16 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     UIViewController *destination = segue.destinationViewController;
-    
-    // prepare selection info
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:sender];
     
-    BIDItem *item = items[indexPath.item];
-    
-    // pass object to next view
-//    NSDictionary *selection = @{@"indexPath" : indexPath, @"object" : item};
-    NSDictionary *selection = @{@"indexPath" : indexPath, @"object" : item};
-    [destination setValue:selection forKey:@"selection"];    
+    // prepare data only for news (NOT for favorite item)
+    if(indexPath.item != 0) {    
+        Item *item = items[indexPath.item];
+        
+        // pass object to next view
+        NSDictionary *selection = @{@"indexPath" : indexPath, @"object" : item};
+        [destination setValue:selection forKey:@"selection"];
+    }
 }
 
 @end

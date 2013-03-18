@@ -12,15 +12,19 @@
 		6DE93B7E16EF4C930005391F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE93B7D16EF4C930005391F /* CoreGraphics.framework */; };
 		6DE93B8416EF4C930005391F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93B8216EF4C930005391F /* InfoPlist.strings */; };
 		6DE93B8616EF4C930005391F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93B8516EF4C930005391F /* main.m */; };
-		6DE93B8A16EF4C930005391F /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93B8916EF4C930005391F /* BIDAppDelegate.m */; };
+		6DE93B8A16EF4C930005391F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93B8916EF4C930005391F /* AppDelegate.m */; };
 		6DE93B8C16EF4C930005391F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93B8B16EF4C930005391F /* Default.png */; };
 		6DE93B8E16EF4C930005391F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93B8D16EF4C930005391F /* Default@2x.png */; };
 		6DE93B9016EF4C930005391F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93B8F16EF4C930005391F /* Default-568h@2x.png */; };
 		6DE93B9316EF4C930005391F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93B9116EF4C930005391F /* MainStoryboard.storyboard */; };
-		6DE93B9E16EF50C10005391F /* BIDGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93B9D16EF50C10005391F /* BIDGridViewController.m */; };
+		6DE93B9E16EF50C10005391F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93B9D16EF50C10005391F /* HomeViewController.m */; };
 		6DE93BA016EF5F7C0005391F /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93B9F16EF5F7C0005391F /* person.png */; };
-		6DE93BA316EF65C00005391F /* BIDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93BA216EF65BF0005391F /* BIDDetailViewController.m */; };
-		6DE93BA716EF848A0005391F /* BIDItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93BA616EF848A0005391F /* BIDItem.m */; };
+		6DE93BA316EF65C00005391F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93BA216EF65BF0005391F /* DetailViewController.m */; };
+		6DE93BA716EF848A0005391F /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93BA616EF848A0005391F /* Item.m */; };
+		6DE93F8616F7383E00FA0FFF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE93F8516F7383E00FA0FFF /* libsqlite3.dylib */; };
+		6DE93F8D16F738D300FA0FFF /* ItemDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93F8C16F738D300FA0FFF /* ItemDAO.m */; };
+		6DE93F9016F74DF700FA0FFF /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93F8F16F74DF700FA0FFF /* Database.m */; };
+		6DE93F9316F7533100FA0FFF /* LocalContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93F9216F7533100FA0FFF /* LocalContentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,19 +36,27 @@
 		6DE93B8316EF4C930005391F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6DE93B8516EF4C930005391F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6DE93B8716EF4C930005391F /* TelecomApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TelecomApp-Prefix.pch"; sourceTree = "<group>"; };
-		6DE93B8816EF4C930005391F /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
-		6DE93B8916EF4C930005391F /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
+		6DE93B8816EF4C930005391F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6DE93B8916EF4C930005391F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6DE93B8B16EF4C930005391F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6DE93B8D16EF4C930005391F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6DE93B8F16EF4C930005391F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6DE93B9216EF4C930005391F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		6DE93B9C16EF50C10005391F /* BIDGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDGridViewController.h; sourceTree = "<group>"; };
-		6DE93B9D16EF50C10005391F /* BIDGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDGridViewController.m; sourceTree = "<group>"; };
+		6DE93B9C16EF50C10005391F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		6DE93B9D16EF50C10005391F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		6DE93B9F16EF5F7C0005391F /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
-		6DE93BA116EF65BF0005391F /* BIDDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDDetailViewController.h; sourceTree = "<group>"; };
-		6DE93BA216EF65BF0005391F /* BIDDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDDetailViewController.m; sourceTree = "<group>"; };
-		6DE93BA516EF848A0005391F /* BIDItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDItem.h; sourceTree = "<group>"; };
-		6DE93BA616EF848A0005391F /* BIDItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDItem.m; sourceTree = "<group>"; };
+		6DE93BA116EF65BF0005391F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		6DE93BA216EF65BF0005391F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		6DE93BA516EF848A0005391F /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		6DE93BA616EF848A0005391F /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		6DE93F8316F7373800FA0FFF /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		6DE93F8516F7383E00FA0FFF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6DE93F8B16F738D300FA0FFF /* ItemDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDAO.h; sourceTree = "<group>"; };
+		6DE93F8C16F738D300FA0FFF /* ItemDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDAO.m; sourceTree = "<group>"; };
+		6DE93F8E16F74DF700FA0FFF /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		6DE93F8F16F74DF700FA0FFF /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		6DE93F9116F7533100FA0FFF /* LocalContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalContentViewController.h; sourceTree = "<group>"; };
+		6DE93F9216F7533100FA0FFF /* LocalContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalContentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE93F8616F7383E00FA0FFF /* libsqlite3.dylib in Frameworks */,
 				6DE93B7A16EF4C930005391F /* UIKit.framework in Frameworks */,
 				6DE93B7C16EF4C930005391F /* Foundation.framework in Frameworks */,
 				6DE93B7E16EF4C930005391F /* CoreGraphics.framework in Frameworks */,
@@ -64,6 +77,8 @@
 		6DE93B6D16EF4C930005391F = {
 			isa = PBXGroup;
 			children = (
+				6DE93F8516F7383E00FA0FFF /* libsqlite3.dylib */,
+				6DE93F8316F7373800FA0FFF /* libsqlite3.0.dylib */,
 				6DE93B7F16EF4C930005391F /* TelecomApp */,
 				6DE93B7816EF4C930005391F /* Frameworks */,
 				6DE93B7716EF4C930005391F /* Products */,
@@ -91,15 +106,18 @@
 		6DE93B7F16EF4C930005391F /* TelecomApp */ = {
 			isa = PBXGroup;
 			children = (
-				6DE93B8816EF4C930005391F /* BIDAppDelegate.h */,
-				6DE93B8916EF4C930005391F /* BIDAppDelegate.m */,
+				6DE93F8716F7386400FA0FFF /* database */,
+				6DE93B8816EF4C930005391F /* AppDelegate.h */,
+				6DE93B8916EF4C930005391F /* AppDelegate.m */,
 				6DE93B9116EF4C930005391F /* MainStoryboard.storyboard */,
-				6DE93B9C16EF50C10005391F /* BIDGridViewController.h */,
-				6DE93B9D16EF50C10005391F /* BIDGridViewController.m */,
-				6DE93BA116EF65BF0005391F /* BIDDetailViewController.h */,
-				6DE93BA216EF65BF0005391F /* BIDDetailViewController.m */,
-				6DE93BA516EF848A0005391F /* BIDItem.h */,
-				6DE93BA616EF848A0005391F /* BIDItem.m */,
+				6DE93B9C16EF50C10005391F /* HomeViewController.h */,
+				6DE93B9D16EF50C10005391F /* HomeViewController.m */,
+				6DE93BA116EF65BF0005391F /* DetailViewController.h */,
+				6DE93BA216EF65BF0005391F /* DetailViewController.m */,
+				6DE93F9116F7533100FA0FFF /* LocalContentViewController.h */,
+				6DE93F9216F7533100FA0FFF /* LocalContentViewController.m */,
+				6DE93BA516EF848A0005391F /* Item.h */,
+				6DE93BA616EF848A0005391F /* Item.m */,
 				6DE93B8016EF4C930005391F /* Supporting Files */,
 			);
 			path = TelecomApp;
@@ -118,6 +136,17 @@
 				6DE93B8F16EF4C930005391F /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DE93F8716F7386400FA0FFF /* database */ = {
+			isa = PBXGroup;
+			children = (
+				6DE93F8B16F738D300FA0FFF /* ItemDAO.h */,
+				6DE93F8C16F738D300FA0FFF /* ItemDAO.m */,
+				6DE93F8E16F74DF700FA0FFF /* Database.h */,
+				6DE93F8F16F74DF700FA0FFF /* Database.m */,
+			);
+			name = database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,10 +218,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DE93B8616EF4C930005391F /* main.m in Sources */,
-				6DE93B8A16EF4C930005391F /* BIDAppDelegate.m in Sources */,
-				6DE93B9E16EF50C10005391F /* BIDGridViewController.m in Sources */,
-				6DE93BA316EF65C00005391F /* BIDDetailViewController.m in Sources */,
-				6DE93BA716EF848A0005391F /* BIDItem.m in Sources */,
+				6DE93B8A16EF4C930005391F /* AppDelegate.m in Sources */,
+				6DE93B9E16EF50C10005391F /* HomeViewController.m in Sources */,
+				6DE93BA316EF65C00005391F /* DetailViewController.m in Sources */,
+				6DE93BA716EF848A0005391F /* Item.m in Sources */,
+				6DE93F8D16F738D300FA0FFF /* ItemDAO.m in Sources */,
+				6DE93F9016F74DF700FA0FFF /* Database.m in Sources */,
+				6DE93F9316F7533100FA0FFF /* LocalContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +345,7 @@
 				6DE93B9B16EF4C930005391F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

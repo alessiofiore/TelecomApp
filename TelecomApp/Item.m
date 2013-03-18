@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Ericsson. All rights reserved.
 //
 
-#import "BIDItem.h"
+#import "Item.h"
 
-@implementation BIDItem
+@implementation Item
 
 @synthesize title;
 @synthesize description;

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BIDItem : NSObject  {
+@interface Item : NSObject  {
     NSString* title;
     NSString* description;
     NSString* status;

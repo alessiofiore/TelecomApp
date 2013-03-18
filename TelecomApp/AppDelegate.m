@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Ericsson. All rights reserved.
 //
 
-#import "BIDAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation BIDAppDelegate
+@implementation AppDelegate
 
 - (void)dealloc
 {

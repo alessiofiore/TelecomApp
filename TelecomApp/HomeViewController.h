@@ -1,5 +1,5 @@
 //
-//  BIDAppDelegate.h
+//  BIDGridViewController.h
 //  TelecomApp
 //
 //  Created by Alessio Fiore on 12/03/13.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BIDAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface HomeViewController : UICollectionViewController {
+    NSMutableArray *items;
+}
 
 @end
